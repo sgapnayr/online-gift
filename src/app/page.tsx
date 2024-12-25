@@ -1,8 +1,6 @@
-import dynamic from "next/dynamic";
+"use client";
 
-const BaseAquarium = dynamic(() => import("../../components/BaseAquarium"), {
-  ssr: false,
-});
+import BaseAquarium from "../../components/BaseAquarium";
 
 export default function Home() {
   return (
